@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme changer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        body{
+            background: #eee;
+            color: black;
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #mode{
+            height: 40px;
+            font-size: 20px;
+            border-radius: 100%;
+        }
+        .dark{
+            background: #000;
+            color: #eee;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="head">
+            <h1>
+                Welcome to JavaScript Bootcamp
+            </h1>
+            <button id="mode" onclick="switchmode()"><i class="fa-solid fa-moon"></i></button>
+            
+        </div>
+
+        <div class="body">
+           <p>JavaScript, created by Brendan Eich in 1995, is one of the most widely used web development languages. It was designed to build dynamic web pages at first. A script is a JS program that may be added to the HTML of any web page. When the page loads, these scripts execute automatically.
+
+            A language that was originally designed to build dynamic web pages may now be run on the server and on almost any device that has the JavaScript Engine installed.
+            
+            After HTML and CSS, JavaScript is the third biggest web technology. JavaScript is a scripting language that may be used to construct online and mobile apps, web servers, games, and more. JavaScript is an object-oriented programming language that is used to generate websites and applications. It was created with the intention of being used in a browser. Even today, the server-side version of JavaScript known as Node.js may be used to create online and mobile apps, real-time applications, online streaming applications, and videogames. Javascript frameworks, often known as inbuilt libraries, may be used to construct desktop and mobile programs. Developers may save a lot of time on monotonous programming jobs by using these code libraries, allowing them to focus on the production work of development.</p>
+        </div>
+    </div>
+
+    <script>
+        function switchmode() {
+        var element = document.body;
+        element.classList.toggle("dark");
+        
+        }
+
+    </script>
+</body>
+</html>
